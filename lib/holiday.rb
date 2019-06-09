@@ -39,14 +39,12 @@ def add_supply_to_memorial_day(holiday_hash, supply)
     if season == :spring
       holiday.each do |day, value|
         if day == :memorial_day
-          holiday_supplies[:spring][:memorial_day] << "Grill"
+          [:memorial_day] << "Grill"
           value.delete_if {|item| item == "Grill"}
-          holiday_supplies[:spring][:memorial_day] << "Table Cloth"
+          [:memorial_day] << "Table Cloth"
         end
       end
-
     end
-
   end
 end
 
