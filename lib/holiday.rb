@@ -34,7 +34,7 @@ def add_supply_to_memorial_day(holiday_hash, supply)
   # again, holiday_hash is the same as the ones above
   # add the second argument to the memorial day array
   memorial_day_supplies = "Grill"
-  holiday_supplies[:spring][:memorial_day]
+  holiday_supplies[:spring][:memorial_day] << memorial_day_supplies
 
 end
 
