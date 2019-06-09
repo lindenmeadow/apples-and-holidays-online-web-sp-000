@@ -42,7 +42,7 @@ def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_arr
   # remember to return the updated hash
   columbus_day_supplies = ["Flags", "Parade Floats", "Italian Food"]
   holiday_supplies[:fall][:columbus_day] = columbus_day_supplies
-  holiday_supplies[:fall]
+  return holiday_supplies[:fall][:columbus_day]
 end
 
 def all_winter_holiday_supplies(holiday_hash)
@@ -58,7 +58,7 @@ def all_supplies_in_holidays(holiday_hash)
   # Summer:
   #   Fourth Of July: Fireworks, BBQ
   # etc.
-
+ holiday_supplies.each do |key|
 end
 
 def all_holidays_with_bbq(holiday_hash)
