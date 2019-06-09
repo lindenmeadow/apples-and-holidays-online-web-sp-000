@@ -40,9 +40,11 @@ end
 def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
   # code here
   # remember to return the updated hash
-  columbus_day_supplies = ["Flags", "Parade Floats", "Italian Food"]
-  holiday_supplies[:fall][:columbus_day] = columbus_day_supplies
-  holiday_supplies[:fall][:columbus_day]
+  new_array = []
+columbus_day_supplies = ["Flags", "Parade Floats", "Italian Food"]
+holiday_supplies[:fall][:columbus_day] = columbus_day_supplies
+new_array << holiday_supplies
+new_array
 end
 
 def all_winter_holiday_supplies(holiday_hash)
@@ -58,7 +60,8 @@ def all_supplies_in_holidays(holiday_hash)
   # Summer:
   #   Fourth Of July: Fireworks, BBQ
   # etc.
-
+  holiday_supplies.map do |key, value|
+    key.capitalize
 end
 
 def all_holidays_with_bbq(holiday_hash)
